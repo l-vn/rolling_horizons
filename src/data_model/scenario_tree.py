@@ -9,3 +9,15 @@ class ScenarioTree:
     def __init__(self, base_scenarios: List[List[float]], transition_probas:List[List[float]], periods:List[int]):
         self.scenarios = []
         self.probas = []
+        number_periods = len(periods)
+        number_hours = len(base_scenarios[0])
+        
+
+    @property
+    def number_hours(self):
+        return len(self.scenarios[0])
+    
+    @property
+    def number_scenarios(self):
+        return len(self.probas)
+    
