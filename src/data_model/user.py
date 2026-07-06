@@ -1,9 +1,9 @@
 from typing import List
 
-from device import Device
+from appliance import Appliance
 
 class User:
 
-    def __init__(self, devices:List[Device], inc_factor:float):
-        self.devices = devices
+    def __init__(self, appliances:List[Appliance], inc_factor:float):
+        self.appliances = appliances
         self.inc_factor = inc_factor
