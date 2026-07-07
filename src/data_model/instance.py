@@ -22,4 +22,8 @@ class Instance:
     def number_users(self) -> int:
         return len(self.users)
     
+    @property
+    def number_scenarios(self) -> int:
+        return self.scenario_tree.number_scenarios
+    
     
